@@ -56,7 +56,7 @@ Drag&drop, user will be able to make the connections. (similar to LabVIEW)
 ### Market Section ###
 Stock market up&downs of all companies, forum users' feedbacks and benchmark results.
 
-Eğer tüm parçalar eşit frekansta çalışıyorsa işlemci fiyatı biraz azalacak. Farklı parça ama aynı frekans olursa, hem fazladan modüler yapı nedeniyle fiyatı artacak, hem de test sürecinin 1-2 tur uzamasına neden olacak.
+If all parts are working in the same frequency, processor's price will drop a little. Farklı parça ama aynı frekans olursa, hem fazladan modüler yapı nedeniyle fiyatı artacak, hem de test sürecinin 1-2 tur uzamasına neden olacak.
 
 Örneğin benchmark'lardan birinde `a = b + c` yazılmış olsun. Bu işlem, bellekten oku-topla-belleğe yaz şeklinde ayrı üç işlem olarak da gelebilecek. Gelişmiş işlemci ise tek komut ile de gelebilecek ama o gelişmiş komutu piyasaya itelemek için prestij harcanması gerekecek ki programcılar kullansın. Sonra bu 3 işlem sırayla soldaki bellek kontrolcüsüne, oradan dekodere, oradan ALU'ya, oradan register modülüne, oradan da bellek kontrolcüsüne gitsin; arka arkaya kırmızı-sarı-kırmızı renklerde işlemler, bloklardan geçerek ilerlesin. Tabii bunlar instruction'lar. Gerekli veri ise başka renklerde ve yine bellek kontrolcülerinden getirtilecekler, ama instruction cache ve data cache olarak bir şeyler eklenmişse ve aynısı yapılıyorsa bu cache'lerden gelecekler.
 
@@ -89,7 +89,7 @@ Oyuna başlarken bir karakter seçilecek:
 ## Oyun Akışı ##
 Her tur için farklı fazlar
 
-1. **CPU tasarımı:** Oyuncunun canını sıkmayacak kadar basit hesabı olan, gerektiğinde baloncuğu tıklatınca ayrıntılara girilebilen (örneğin SIMD, içine girince toplama, çarpma, özel fonksiyonlar açığa çıkar, bunlar iptal edilebilirler) ve akıcı, hiç kasmayan bir görünüm.
+1. **CPU design:** Oyuncunun canını sıkmayacak kadar basit hesabı olan, gerektiğinde baloncuğu tıklatınca ayrıntılara girilebilen (örneğin SIMD, içine girince toplama, çarpma, özel fonksiyonlar açığa çıkar, bunlar iptal edilebilirler) ve akıcı, hiç kasmayan bir görünüm.
 2. **Banka işlemleri:** Borç alınsın, hisse açılsın, alınsın, satılsın.
 3. **Fabrikalarla anlaşma:** SimCity kadar değil, Lemonade Tycoon'dan hallice, Theme Hospital tadında.
 4. **Yazılım geliştirme:** Benchmark, API, işlemci hata testleri.
@@ -141,13 +141,13 @@ Oyun dünyasındaki kullanıcıların gelir düzeylerine göre ayrılacaktı. Bu
 	- 100: "Gözüm hep FPS sayacında olduğu için frag kasamadım." veya "simülasyonum için en az 80 TFLOP gerekli."
 	- Bu özellik, benchmark güven değerini etkiler. Artma eğilimindedir ama az olasılıkla azalabilir de.
 
-- **Gelir değişim olasılığı:** %1-2 olasılıkla zengin olunabilecek veya iflas edilebilecek (3 turda bir kez çalışır)
+- **Income change possibility:** 1-2% chance to become rich or bankrupt (happends every 3 turns)
 
-- Her tur, her kullanıcı %1 olasılıkla yok olacak (istatistiksel olarak 10,000 kullanıcının 100 tanesi) ve dünyaya %2.1 olasılıkla yeni bir kullanıcı katılacak (her 2 kullanıcı başına %1.2, yani 10,000 kullanıcı için 102 yeni kullanıcı). Kullanıcının yaşı arttıkça %1 olan yok olma olasılığı, %5'e kadar çıkıp sabitlenecek. Böylece dünya sürekli değişecek.
+- Every turn, there is 1% chance a user will disappear (Statisticly; 100 users out of 10,000 users) and there is going to be 2.1% chance a new user will join the world (For every user posibility is 1.2%, so 102 new users for 10,000 users). Every time users ages, posiblity of disappearing will increase from 1% until 5%. This will make the world evolve.
 
-- Kullanıcılara ek olarak her tur oyuncunun yok olma olasılığı da %1 olacak, ama spora ve sağlığa zaman ayırarak bu olasılık, %0.5'lere indirilebilecek. (Efor/enerji kısmında buna değinildi)
+- In addition to users, player will also have posibility of disappearing which is going to be 1% as well, however by sparing time to sports and health, this probability can be lowerd to maximum 0.5%. (As mentioned in Effort/Energy)
 
-- **Overclock çılgınlığı:** 1-100 arasında bir rastgele değerle başlayacak.
+- **Overclock frenzy:** Starts with random value in the interval of 1-100.
 	- 1: Overclock nedir bilmez, bozulursa garantiye gönderir.
 	- 100: Örneğin: İlk gün i7'ye %50 OC yaptıktan sonra bozulmazsa, ertesi gün %60 OC yapar ve bozulursa yedekteki %40 OC'li i3 ile oyuna devam eder.)
 	- Bu değerin 50'den farkına göre en fazla overclock tutturulabilecek.
@@ -164,7 +164,7 @@ Oyun dünyasındaki kullanıcıların gelir düzeylerine göre ayrılacaktı. Bu
 
 ÖNCE DÜZENLENECEK:
 ===
-İşlemci dizayn sayfasındaki kontroller:
+Controlls in Processor Design page:
 
 - SurukleBirak ---> farenin tıklandığı dünya kordinatını alır, sonraki karede son fare kordinatından çıkartır, delta x ve delta y olarak elde edilen vektör kadar kendi bağlı olduğu nesneyi kaydırır ama gene dünya koordinatlarında. Eğer buna bağlı cisimler ve onlara da bağlı başka cisimler varsa hepsini geçici olarak buna bağlar ve bununla beraber onlar da sürüklenir. Farenin basılı olan sol veya sağ tuşu bırakıldığında tıklı olan cisme bağlı olan nesneleri tekrar serbest bırakır ama konumları gene aynı kalır.(ortadaki parçaların yeri değiştirilirken) (arama işlemindeki bağdan kasıt, mantıksal bağ, bağlanmadaki bağ ise grafiksel bağ, oyun motorundaki yani)
 
