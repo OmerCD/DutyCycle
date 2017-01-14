@@ -1,0 +1,52 @@
+
+            // işlemcideki program akışı ve pipeline şekilleri:
+            //                    program sayacı bilgisi tüm kontrol modüllerinde ortak
+            //                    kontrol modülü (bunun girişi yok. sadece pipeline hücreleri ve onların 1er giriş 1er çıkışı var)
+            //                         |
+            //                         |--------------------------------> fetch   (bellek kontrolcüsü - getir) ---> bellek kontrolcüsü
+            //                         |<-------------------------------- (bellekten gelen komut)              <--
+            //                         |
+            //                         |--------------------------------> decode  (dekoderde komut, alt komutlara ayrılıyor)  --> dekoder
+            //                         |<-------------------------------  (komut paketi)                                      <--
+            //                         |
+            //                         |
+            //                         |--------------------------------> execute (ALU, FPU gibi birimlere)  ---> ALU,FPU
+            //                         |<-------------------------------  (hesap sonucu, kök(x), a+b, ...)   <---
+            //                         |                                  (3 tane ALU varsa rastgele veya sırayla bir tanesine)
+            //                         |
+            //                         |--------------------------------> store  (bellek kontrolcüsü - kayıt)  --> bellek kontrolcüsü
+            //                         |<-------------------------------                                       <--
+            //                         |
+            //                         v
+            //                     bitiş(retire) modülü (komut sayacını 1 arttırır, adresi de bellek bağımlılığı listesinden çıkartır)
+
+
+            //                        ALU  (girişleri var)
+            //                         |
+            //                         |
+            //                         | -------------------------> (gerekiyorsa) bellek kontrolcüsünden veri al  ----> bellek kontrolcüsü
+            //                         | <------------------------                                                <---
+            //                         |
+            //                         |
+            //                         | -------------------------> (gerekiyorsa) bellek kontrolcüsünden veri al   ----> bellek kontrolcüsü
+            //                         | <------------------------                                                 <---
+            //                         |
+            //                         |
+            //                         | ------------------------->  hücredeki verileri topla (ALUnun kendi içinde)
+            //                         | <------------------------
+            //                         |
+            //                         v
+            //                         hangi modülden komut geldiyse oraya cevap
+
+
+
+            //                         BUS (girişler)
+            //                         |
+            //                         |<---------
+            //                         |          |
+            //                         |          | sürekli döngü ile, girişler boş çıkışlara herzaman ulaşıyor
+            //                         |          |
+            //                         |-----------
+            //                         |
+            //                         v
+            //                         (çıkışlar)
