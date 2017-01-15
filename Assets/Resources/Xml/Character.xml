@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="windows-1254"?>
+<Character xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Skills>
+    <Skill KeyName="AbilityToPushAPIWithLessPrestige">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="Charisma">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="ErrorCorrection">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="ExperienceGainRate">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="LogicalOptimization">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="PhysicalOptimization">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="PrestigeGainRate">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="RDPointGainRate">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+    <Skill KeyName="Teamwork">
+      <Level>0</Level>
+      <Progress>0</Progress>
+    </Skill>
+  </Skills>
+</Character>
