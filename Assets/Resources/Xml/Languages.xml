@@ -62,5 +62,9 @@
       <English>Teamwork</English>
       <Turkish>Ekip Çalýþmasý</Turkish>
     </Translation>
+    <Translation Key="SkillPoints">
+      <English>Skill Point(s)</English>
+      <Turkish>Yetenek Puaný</Turkish>
+    </Translation>
   </Translations>
 </LanguageManager>

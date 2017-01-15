@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\MainMenuUI\MainMenuText.cs" />
     <Compile Include="Assets\Scripts\Person\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Person\Person.cs" />
+    <Compile Include="Assets\SkillPointSliderManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Xml\Character.xml" />
