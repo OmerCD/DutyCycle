@@ -90,13 +90,13 @@ Oyuna başlarken bir karakter seçilecek:
 Her tur için farklı fazlar
 
 1. **CPU design:** Oyuncunun canını sıkmayacak kadar basit hesabı olan, gerektiğinde baloncuğu tıklatınca ayrıntılara girilebilen (örneğin SIMD, içine girince toplama, çarpma, özel fonksiyonlar açığa çıkar, bunlar iptal edilebilirler) ve akıcı, hiç kasmayan bir görünüm.
-2. **Banka işlemleri:** Borç alınsın, hisse açılsın, alınsın, satılsın.
-3. **Fabrikalarla anlaşma:** SimCity kadar değil, Lemonade Tycoon'dan hallice, Theme Hospital tadında.
-4. **Yazılım geliştirme:** Benchmark, API, işlemci hata testleri.
-5. **Test sızdırmaları:** "X şirketinin y testi sonuçları silinmeden önce elimize geçti." gibi haberleri bloglara ve forumlara bilerek verme işlemi
-6. **Seri üretime geçme:** Hangi fabrikada ne üretileceği, nerelere gönderileceği, hangi kıtada hangi fiyat olacak...
-7. **Dünya yaşamı:** Oyuncunun kontrolünde olmayacak, kullanıcılar benchmark yapacak, forumlar test yapacak, bazı şirketler anlaşma yapacaklar, patlayan işlemciler bile olacak. En sonunda bunlardan para, prestij, Ar-Ge, deneyim puanları kazanılacak.
-8. **Eleman kiralama:** Satın alımlar. Veya kâr elde etmek için işten çıkarmalar (prestiji azaltacak, kovulanlar başka şirketlere geçerse bazı teknolojileri gizlice üretebilecekler)
+2. **Banking Operations:** Taking loan, creating share, buying, selling.
+3. **Deal with Factories:** Not detailed as SimCity, much more like Lemonade Tycoon and Theme Hospital.
+4. **Software Development:** Benchmark, API, processor error tests.
+5. **Test leaks:** Giving news like "We acquired X corporation's y test results before it got deleted." to blogs and forums.
+6. **Mass Production:** Which factory will create which product, wherever product is going to be send, what is the price going to be on each continent...
+7. **Life in World:** Not in player's control. Users will do benchmarks, forums will do tests, some corporations will negotiate with each other, some processors might even explode. Finally from these, player will gain money, prestige, R&D and experience points.
+8. **Hiring Staff:** Satın alımlar. Veya kâr elde etmek için işten çıkarmalar (prestiji azaltacak, kovulanlar başka şirketlere geçerse bazı teknolojileri gizlice üretebilecekler)
 
 Oyun ekranının en altında bir gösterge olacak, diğer şirketlerin ortalamalarından çok gerideysek kumdan kale yapan bebek göreceğiz, şirket güçlendikçe o da büyüyecek ve en sonunda karakterimizin günümüzdeki haline dönüşecek. Mesela Lisa T Su ise fotoğrafı (güncel kalması için AMD sitesinden belirli aralıklarla indirecek)
 
