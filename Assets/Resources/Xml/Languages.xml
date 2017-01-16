@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1254"?>
 <LanguageManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <CurrentLanguage>English</CurrentLanguage>
+  <CurrentLanguage>Turkish</CurrentLanguage>
   <Translations>
     <Translation Key="StartNewGame">
       <English>Start New Game</English>
@@ -65,6 +65,14 @@
     <Translation Key="SkillPoints">
       <English>Skill Point(s)</English>
       <Turkish>Yetenek Puanı</Turkish>
+    </Translation>
+    <Translation Key="Decoder">
+      <English>Decoder</English>
+      <Turkish>Çözümleyici</Turkish>
+    </Translation>
+    <Translation Key="Adder">
+      <English>Adder</English>
+      <Turkish>Toplayıcı</Turkish>
     </Translation>
   </Translations>
 </LanguageManager>

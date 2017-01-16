@@ -81,14 +81,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CharacterCreatorControl.cs" />
+    <Compile Include="Assets\Scripts\CPUDesigner\CPUDesignSceneManager.cs" />
+    <Compile Include="Assets\Scripts\CPUDesigner\ToolBoxItem.cs" />
+    <Compile Include="Assets\Scripts\CharacterCreator\CharacterCreatorControl.cs" />
+    <Compile Include="Assets\Scripts\CharacterCreator\SkillPointSliderManager.cs" />
     <Compile Include="Assets\Scripts\LanguageEditor\LanguageManager.cs" />
     <Compile Include="Assets\Scripts\LanguageEditor\SystemEditor.cs" />
     <Compile Include="Assets\Scripts\LanguageEditor\Translation.cs" />
     <Compile Include="Assets\Scripts\MainMenuUI\MainMenuText.cs" />
     <Compile Include="Assets\Scripts\Person\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Person\Person.cs" />
-    <Compile Include="Assets\SkillPointSliderManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Xml\Character.xml" />

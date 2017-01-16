@@ -5,6 +5,7 @@ using UnityEngine;
 [XmlRoot("LanguageManager")]
 public class LanguageManager
 {
+    public static LanguageManager GeneralLanguageManager;
     [XmlEnum("CurrentLanguage")]
     public Language CurrentLanguage;
     [XmlArray("Translations"),XmlArrayItem("Translation")]
