@@ -35,13 +35,13 @@ public class LanguageManager
     public string GetString(string key)
     {
         int i = FindKey(key);
-        return i != -1 ? Translations[i].GetValue(CurrentLanguage) : string.Empty;
+        return i != -1 ? Translations[i].GetValue(CurrentLanguage) : key;
     }
 
     public string GetString(string key, Language language)
     {
         int i = FindKey(key);
-        return i != -1 ? Translations[i].GetValue(language) : string.Empty;
+        return i != -1 ? Translations[i].GetValue(language) : key;
     }
     void Insert(Translation translation, bool add)
     {

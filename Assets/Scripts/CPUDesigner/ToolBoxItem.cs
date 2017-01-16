@@ -4,8 +4,8 @@ using UnityEngine;
 [System.Serializable]
 public struct ToolBoxItem
 {
-    [SerializeField]
-    private string keyName;
+    [SerializeField] private string keyName;
+    [SerializeField] private int rDCost;
     public string Name { get { return LanguageManager.GeneralLanguageManager.GetString(keyName); } }
     public void OnClick()
     {
