@@ -3,7 +3,7 @@
   <CurrentLanguage>Turkish</CurrentLanguage>
   <Translations>
     <Translation Key="StartNewGame">
-      <English>Start New Game</English>
+      <English>New Game</English>
       <Turkish>Yeni Oyun</Turkish>
     </Translation>
     <Translation Key="Settings">
@@ -12,23 +12,23 @@
     </Translation>
     <Translation Key="Name">
       <English>Name</English>
-      <Turkish>Ýsim</Turkish>
+      <Turkish>Ä°sim</Turkish>
     </Translation>
     <Translation Key="Exit">
       <English>Exit</English>
-      <Turkish>Çýkýþ</Turkish>
+      <Turkish>Ã‡Ä±kÄ±ÅŸ</Turkish>
     </Translation>
     <Translation Key="LoadGame">
       <English>Load Game</English>
-      <Turkish>Oyun Yükle</Turkish>
+      <Turkish>Oyun YÃ¼kle</Turkish>
     </Translation>
     <Translation Key="MainMenu">
       <English>Main Menu</English>
-      <Turkish>Ana Menü</Turkish>
+      <Turkish>Ana MenÃ¼</Turkish>
     </Translation>
     <Translation Key="AbilityToPushAPIWithLessPrestige">
       <English>Ability to push API with less prestige</English>
-      <Turkish>Daha az prestijle de bir API iteleyebilme</Turkish>
+      <Turkish>Daha az prestijle API iteleyebilme</Turkish>
     </Translation>
     <Translation Key="Charisma">
       <English>Charisma</English>
@@ -36,15 +36,15 @@
     </Translation>
     <Translation Key="ErrorCorrection">
       <English>Error Correction</English>
-      <Turkish>Hata Düzeltme</Turkish>
+      <Turkish>Hata DÃ¼zeltme</Turkish>
     </Translation>
     <Translation Key="ExperienceGainRate">
       <English>Experience Gain Rate</English>
-      <Turkish>Tecrübe Kazanma Oraný</Turkish>
+      <Turkish>TecrÃ¼be Kazanma OranÄ±</Turkish>
     </Translation>
     <Translation Key="LogicalOptimization">
       <English>Logical Optimization</English>
-      <Turkish>Mantýksal Optimizasyon</Turkish>
+      <Turkish>MantÄ±ksal Optimizasyon</Turkish>
     </Translation>
     <Translation Key="PhysicalOptimization">
       <English>Physical Optimization</English>
@@ -52,27 +52,27 @@
     </Translation>
     <Translation Key="PrestigeGainRate">
       <English>Prestige Gain Rate</English>
-      <Turkish>Prestij Kazanma Oraný</Turkish>
+      <Turkish>Prestij Kazanma OranÄ±</Turkish>
     </Translation>
     <Translation Key="RDPointGainRate">
-      <English>R&amp;D Point Gain Rate</English>
-      <Turkish>Ar-Ge Puan Kazanma Oraný</Turkish>
+      <English>R&D Point Gain Rate</English>
+      <Turkish>Ar-Ge PuanÄ± Kazanma OranÄ±</Turkish>
     </Translation>
     <Translation Key="Teamwork">
       <English>Teamwork</English>
-      <Turkish>Ekip Çalýþmasý</Turkish>
+      <Turkish>Ekip Ã‡alÄ±ÅŸmasÄ±</Turkish>
     </Translation>
     <Translation Key="SkillPoints">
       <English>Skill Point(s)</English>
-      <Turkish>Yetenek Puaný</Turkish>
+      <Turkish>Yetenek PuanÄ±</Turkish>
     </Translation>
     <Translation Key="Decoder">
       <English>Decoder</English>
-      <Turkish>Çözümleyici</Turkish>
+      <Turkish>Ã‡Ã¶zÃ¼mleyici</Turkish>
     </Translation>
     <Translation Key="Adder">
       <English>Adder</English>
-      <Turkish>Toplayýcý</Turkish>
+      <Turkish>ToplayÄ±cÄ±</Turkish>
     </Translation>
   </Translations>
 </LanguageManager>
