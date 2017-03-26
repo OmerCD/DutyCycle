@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+
 [XmlRoot("LanguageManager")]
 public class LanguageManager
 {
@@ -11,6 +12,7 @@ public class LanguageManager
     [XmlArray("Translations"),XmlArrayItem("Translation")]
     public List<Translation> Translations;
     static readonly string globalFilePath = Path.Combine(Application.dataPath, "Resources/Xml/Languages.xml");
+
     public enum Language
     {
         English,
@@ -22,6 +24,7 @@ public class LanguageManager
         CurrentLanguage = Language.English;
         Translations = new List<Translation>();
     }
+
     #region Basic Operations
     public void AddTranslation(Translation translation)
     {
@@ -32,17 +35,12 @@ public class LanguageManager
     {
         Insert(translation, false);
     }
-    public string GetString(string key)
+    
+    public string GetString(string key, Language language = null)
     {
-        int i = FindKey(key);
-        return i != -1 ? Translations[i].GetValue(CurrentLanguage) : key;
+        return (FindKey(key) != -1) ? Translations[i].GetValue(language ?? CurrentLanguage) : key;
     }
 
-    public string GetString(string key, Language language)
-    {
-        int i = FindKey(key);
-        return i != -1 ? Translations[i].GetValue(language) : key;
-    }
     void Insert(Translation translation, bool add)
     {
         int i = FindKey(translation.Key);
@@ -61,6 +59,7 @@ public class LanguageManager
     {
         Translations.Remove(translation);
     }
+
     public void Remove(int index)
     {
         Translations.RemoveAt(index);
@@ -77,6 +76,7 @@ public class LanguageManager
             }
         }
     }
+
     public int FindKey(string key)
     {
         for (int i = 0; i < Translations.Count; i++)
@@ -88,11 +88,11 @@ public class LanguageManager
         }
         return -1;
     }
+
     public bool ContainsKey(string key)
     {
         return FindKey(key) >= 0;
     }
-
     #endregion
 
     #region Save & Load
@@ -104,6 +104,7 @@ public class LanguageManager
             serializer.Serialize(stream, this);
         }
     }
+
     public static LanguageManager Load()
     {
         if (File.Exists(globalFilePath))
